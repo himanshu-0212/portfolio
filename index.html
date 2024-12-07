@@ -382,17 +382,23 @@
                     </li>
                   </ul>
                 </div>
-              <div
+                <div
                   class="tab-pane fade"
                   id="pills-Experiance"
                   role="tabpanel"
                   aria-labelledby="pills-Experiance-tab"
                   tabindex="0"
                 >
-                  <div class="experience-section text-start">
+                <div class="experience-container">
+                  <!-- Experience Section -->
+                  <div id="experience-1" class="experience-section text-start active">
+                    <div class="row">
                     <div class="experience-item-header">
-                      <h3 class="mb-4"> <img src="imgs/sigmoid_frogs_logo.jpg" alt="" width="32" height="32">SigmoidFrogs</h3>
-                      <span><strong>Duration:</strong> Nov 2023 – Present</span>
+                      <h3 class="mb-4">
+                        <img src="imgs/sigmoid_frogs_logo.jpg" alt="" width="32" height="32"> SigmoidFrogs
+                      </h3>
+                      <span><strong>Duration:</strong> 20th Oct 2023 – 31st Oct 2024</span>
+                    </div>
                     </div>
                     <div class="experience-item-header mb-3">
                       <span><strong>Role:</strong> Junior Software Developer</span>
@@ -403,6 +409,31 @@
                       </ul>
                     </div>
                   </div>
+                
+                  <div id="experience-2" class="experience-section text-start">
+                    <div class="experience-item-header">
+                      <h3 class="mb-4">
+                        <img src="imgs/newel-logo.png" alt="" width="64" height="32">Newel Technologies
+                      </h3>
+                      <span><strong>Duration:</strong> 9th Nov 2024 – Present</span>
+                    </div>
+                    <div class="experience-item-header mb-3">
+                      <span><strong>Role:</strong> Jr Software Developer</span>
+                      <ul class="text-start ps-0 mt-3">
+                        <li>• Designed and implemented new features for web applications.</li>
+                        <li>• Collaborated with cross-functional teams to enhance product quality.</li>
+                        <li>• Improved application performance and scalability.</li>
+                      </ul>
+                    </div>
+                  </div>
+                
+                  <!-- Pagination Controls -->
+                  <div class="pagination-controls">
+                    <button id="prev" class="btn btn-primary" disabled><i class="fa-solid fa-angles-left" id="prev"></i></button>
+                    <button id="next" class="btn btn-primary"><i class="fa-solid fa-angles-right" id="next"></i></button>
+                  </div>
+                </div>
+                
                 </div>
                 <div
                   class="tab-pane fade"
@@ -647,13 +678,13 @@
               <p class="text-start"><strong class="text-white">Technologies:</strong> Node.js, ExpressJs, Next.js, React.js, postgresql, Payment Gateways </p>
               <div class="row">
                 <div class="col-lg-6 col-md-6 mb-4">
-                  <h5 class="text-center">Admin Panel Demo</h5>
+                  <h5 class="text-center text-white">Admin Panel Demo</h5>
                   <video width="100%" controls autoplay muted loop>
                     <source src="dontwait admin.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="col-lg-6 col-md-6 mb-4">
-                  <h5 class="text-center">Web Panel Demo</h5>
+                  <h5 class="text-center text-white">Web Panel Demo</h5>
                   <video width="100%" controls autoplay muted loop>
                     <source src="dont wait web.mp4" type="video/mp4">
                   </video>
@@ -671,13 +702,13 @@
               <p class="text-start"><strong class="text-white">Technologies:</strong> React.js, NextJs, Node.js, Express.js, Postgresql , Payment Gateways</p>
               <div class="row">
                 <div class="col-lg-6 col-md-6 mb-4">
-                  <h5 class="text-center">Admin Panel Demo</h5>
+                  <h5 class="text-center text-white">Admin Panel Demo</h5>
                   <video width="100%" controls autoplay muted loop>
                     <source src="aitekAdmin.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="col-lg-6 col-md-6 mb-4">
-                  <h5 class="text-center">Web Panel Demo</h5>
+                  <h5 class="text-center text-white">Web Panel Demo</h5>
                   <video width="100%" controls autoplay muted loop>
                     <source src="Aitek web.mp4" type="video/mp4">
                   </video>
@@ -695,13 +726,13 @@
               <p class="text-start"><strong class="text-white">Technologies:</strong> React.js, NextJs, Node.js, Express.js, Postgresql</p>
               <div class="row">
                 <div class="col-lg-6 col-md-6 mb-4">
-                  <h5 class="text-center">Admin Panel Demo</h5>
+                  <h5 class="text-center text-white">Admin Panel Demo</h5>
                   <video width="100%" controls autoplay muted loop>
                     <source src="blu.mp4" type="video/mp4">
                   </video>
                 </div>
                 <div class="col-lg-6 col-md-6 mb-4">
-                  <h5 class="text-center">Web Panel Demo</h5>
+                  <h5 class="text-center text-white">Web Panel Demo</h5>
                   <video width="100%" controls autoplay muted loop>
                     <source src="blu.mp4" type="video/mp4">
                   </video>
@@ -722,7 +753,7 @@
               <p class="text-start"><strong class="text-white">Technologies:</strong> Node.js, ExpressJs, Next.js, React.js, postgresql</p>
               <div class="row">
                 <div class="col-lg-6 col-md-6 mb-4">
-                  <h5 class="text-center">Admin Panel Demo</h5>
+                  <h5 class="text-center text-white">Admin Panel Demo</h5>
                   <video width="100%" controls autoplay muted loop>
                     <source src="linkedcare web.mp4" type="video/mp4">
                   </video>

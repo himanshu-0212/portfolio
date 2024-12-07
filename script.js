@@ -52,3 +52,37 @@ let myvideo = () => {
 
 setTimeout(myvideo, 7000);
 
+const experiences = document.querySelectorAll(".experience-section");
+const prevButton = document.getElementById("prev");
+const nextButton = document.getElementById("next");
+
+let currentPage = 0;
+
+function updatePagination() {
+  // Show the current experience
+  experiences.forEach((exp, index) => {
+    exp.classList.toggle("active", index === currentPage);
+  });
+
+  // Update button states
+  prevButton.disabled = currentPage === 0;
+  nextButton.disabled = currentPage === experiences.length - 1;
+}
+
+// Event Listeners for Pagination Buttons
+prevButton.addEventListener("click", () => {
+  if (currentPage > 0) {
+    currentPage--;
+    updatePagination();
+  }
+});
+
+nextButton.addEventListener("click", () => {
+  if (currentPage < experiences.length - 1) {
+    currentPage++;
+    updatePagination();
+  }
+});
+
+// Initialize the first page
+updatePagination();
