@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      KO
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- Navbar -->
+
+    <header class="header_wrapper">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <div id="sound">
+            <audio id="myAudio">
+              <source src="myAudio.mp3" />
+            </audio>
+            <i class="fab fa-soundcloud sound-cloud"></i>
+            <span>Sound</span>
+            <div class="on-off">
+              <span id="off">OFF</span>
+              <span id="on">On</span>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-stream navbar-toggler-icon"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav menu-navbar-nav">
+              <li
+                class="nav-item wow animate__animated animate__fadeInRight"
+                data-wow-delay="400ms"
+              >
+                <a class="nav-link" href="#section-home">Home</a>
+              </li>
+              <li
+                class="nav-item wow animate__animated animate__fadeInRight"
+                data-wow-delay="500ms"
+              >
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li
+                class="nav-item wow animate__animated animate__fadeInRight"
+                data-wow-delay="600ms"
+              >
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li
+                class="nav-item wow animate__animated animate__fadeInRight"
+                data-wow-delay="700ms"
+              >
+                <a class="nav-link" href="#portfolio">Projects</a>
+              </li>
+              <li
+                class="nav-item nav-link mt-lg-0 wow animate__animated animate__fadeInRight"
+                data-wow-delay="800ms"
+              >
+                <a class="main-btn" href="#contact">Hire me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Banner section -->
+
+    <section id="section-home" class="section-home banner_wrapper">
+      <div class="container-fluid">
+        <div class="text-zone">
+          <div class="wow animate__animated animate__fadeInLeft header-section">
+            Hi,
+
+            <div class="section-div">
+              I'm
+              <div class="myhead">
+                <span>H</span>
+                <span>I</span>
+                <span>M</span>
+                <span>A</span>
+                <span>N</span>
+                <span>S</span>
+                <span>H</span>
+                <span>U</span>
+              </div>
+            </div>
+            Jr Software Developer
+          </div>
+          <p class="gray-text">Mern Stack Developer / Designer</p>
+          <a
+            class="main-btn text mt-5 wow animate__animated animate__fadeInRight"
+            id="main-btn-id"
+            href="Resume.pdf"
+            download="Resume.pdf"
+          >
+            Download CV <span></span><span></span><span></span><span></span>
+          </a>
+          <br />
+        </div>
+        <div class="scroll-down">
+          <span>scroll down</span>
+          <i class="fas fa-arrow-down"></i>
+        </div>
+
+        <div class="scroll-down scroll-down--left">
+          <span>scroll down</span>
+          <i class="fas fa-arrow-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+
+    <section id="about" class="about_wrapper">
+      <div class="container mt-5">
+        <div class="row justify-content-between align-items-center">
+          <div
+            class="col-lg-5 mb-4 mb-lg-0 text-center about-pic wow animate__animated animate__fadeInLeft"
+            data-wow-delay="600ms"
+          >
+            <img
+              src="imgs/profile_img_1.jpg"
+              class="img-fluid rounded-3"
+              alt="About-us"
+              style="--clr: #1e9bff"
+            /><i></i>
+          </div>
+          <div
+            class="col-lg-7 ps-lg-5 text-center text-lg-start wow animate__animated animate__fadeInRight"
+            data-wow-delay="800ms"
+          >
+            <div class="my-3 my-lg-0">
+              <span class="subtitle">Carrier Details</span>
+              <h2>About Me</h2>
+              <p>
+                A dedicated and skilled Junior Software Developer with 1 year of hands-on experience in crafting efficient, scalable, and user-centric solutions. Seeking an opportunity in a dynamic organization to leverage my expertise in development tools and programming languages, contributing to business success while enhancing my professional growth
+              </p>
+            </div>
+            <div class="pt-4">
+              <ul
+                class="nav nav-pills justify-content-center justify-content-lg-between mb-3"
+                id="pills-tab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-skill-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-skill"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-skill"
+                    aria-selected="true"
+                  >
+                    Main Skills
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-Award-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-Award"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-Award"
+                    aria-selected="false"
+                  >
+                    Achievements
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-Experiance-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-Experiance"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-Experiance"
+                    aria-selected="false"
+                  >
+                    Experiance
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-Education-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-Education"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-Education"
+                    aria-selected="false"
+                  >
+                    Education
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-skill"
+                  role="tabpanel"
+                  aria-labelledby="pills-skill-tab"
+                  tabindex="0"
+                >
+                  <div class="skills-container">
+                    <div class="our-skills">
+                      <div class="skill">
+                        <p class="text-start">HTML</p>
+                        <div
+                          class="progress-line"
+                          style="--bg: #FF6F61; --wd: 80%; --tx: '80%'"
+                        >
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="our-skills">
+                      <div class="skill">
+                        <p class="text-start">CSS</p>
+                        <div
+                          class="progress-line"
+                          style="--bg: #6B8E23; --wd: 75%; --tx: '75%'"
+                        >
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="our-skills">
+                      <div class="skill">
+                        <p class="text-start">JavaScript</p>
+                        <div
+                          class="progress-line"
+                          style="--bg: #F1C40F; --wd: 70%; --tx: '70%'"
+                        >
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="our-skills">
+                      <div class="skill">
+                        <p class="text-start">Bootstrap</p>
+                        <div
+                          class="progress-line"
+                          style="--bg: #8E44AD; --wd: 75%; --tx: '75%'"
+                        >
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="our-skills">
+                      <div class="skill">
+                        <p class="text-start">Tailwind</p>
+                        <div
+                          class="progress-line"
+                          style="--bg: #3498DB; --wd: 75%; --tx: '75%'"
+                        >
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="our-skills">
+                      <div class="skill">
+                        <p class="text-start">React Js</p>
+                        <div
+                          class="progress-line"
+                          style="--bg: #2ECC71; --wd: 70%; --tx: '70%'"
+                        >
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="our-skills">
+                      <div class="skill">
+                        <p class="text-start">Next Js</p>
+                        <div
+                          class="progress-line"
+                          style="--bg: #E67E22; --wd: 70%; --tx: '70%'"
+                        >
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="our-skills">
+                      <div class="skill">
+                        <p class="text-start">Node Js</p>
+                        <div
+                          class="progress-line"
+                          style="--bg: #D5DBDB; --wd: 70%; --tx: '70%'"
+                        >
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="our-skills">
+                      <div class="skill">
+                        <p class="text-start">Express Js</p>
+                        <div
+                          class="progress-line"
+                          style="--bg: #F39C12; --wd: 75%; --tx: '75%'"
+                        >
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="our-skills">
+                      <div class="skill">
+                        <p class="text-start">TypeORM</p>
+                        <div
+                          class="progress-line"
+                          style="--bg: #1ABC9C; --wd: 75%; --tx: '75%'"
+                        >
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="our-skills">
+                      <div class="skill">
+                        <p class="text-start">Git / GitHub</p>
+                        <div
+                          class="progress-line"
+                          style="--bg: #E74C3C; --wd: 75%; --tx: '75%'"
+                        >
+                          <span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-Award"
+                  role="tabpanel"
+                  aria-labelledby="pills-Award-tab"
+                  tabindex="0"
+                >
+                  <ul class="text-start ps-0">
+                    <li>• Consistent performer during the testing time</li>
+                    <li>
+                      • Designed and developed a personal portfolio website
+                      showcasing your skills, projects, and a visually appealing
+                      layout.
+                    </li>
+                  </ul>
+                </div>
+              <div
+                  class="tab-pane fade"
+                  id="pills-Experiance"
+                  role="tabpanel"
+                  aria-labelledby="pills-Experiance-tab"
+                  tabindex="0"
+                >
+                  <div class="experience-section text-start">
+                    <div class="experience-item-header">
+                      <h3 class="mb-4"> <img src="imgs/sigmoid_frogs_logo.jpg" alt="" width="32" height="32">SigmoidFrogs</h3>
+                      <span><strong>Duration:</strong> Nov 2023 – Present</span>
+                    </div>
+                    <div class="experience-item-header mb-3">
+                      <span><strong>Role:</strong> Junior Software Developer</span>
+                      <ul class="text-start ps-0 mt-3">
+                        <li>• Contributed to E-Prescription, Aitek, Hahndorf, LinkedCare, and BluPack projects.</li>
+                        <li>• Developed RESTful APIs, admin panels, and user-friendly web interfaces.</li>
+                        <li>• Integrated payment gateways and enhanced project scalability and performance.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-Education"
+                  role="tabpanel"
+                  aria-labelledby="pills-Education-tab"
+                  tabindex="0"
+                >
+                  <ul class="text-start ps-0">
+                    <li>
+                      Secondary School Certificate in 2017 with
+                      <span style="color: #fd4766">80%</span> from :
+                      <a href="https://www.stanthonyhighschool.in/"
+                        >St.Anthony's High School</a
+                      >
+                    </li>
+                    <li>
+                      Higher Secondary Certificate in 2019 with
+                      <span style="color: #fd4766">56%</span> from :
+                      <a href="">Jaydeep jr college</a>
+                    </li>
+                    <li>
+                      BSc(Computer Science) degree in 2022 with
+                      <span style="color: #fd4766">6.99 cgpa</span> from :
+                      <a href="https://kgmittalcollege.edu.in/"
+                        >Smt.KG.Mittal college of Arts and Commerce</a
+                      >
+                    </li>
+                    <li>
+                      Tcs NQT Examination :<a
+                        href="nqt.jpg"
+                        download="#nqt.jpg"
+                        style="color: #3bd8ff"
+                        >Download</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+
+    <section id="services" class="services_wrapper">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <span class="subtitle">What I can do for you</span>
+            <h2>My Awesome Skills</h2>
+            <p>
+              Passionate about continuous learning and staying up-to-date with
+              industry trends,<br class="d-none d-md-block" />
+              consistently expanding my skill set to deliver cutting-edge
+              solutions.
+            </p>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+          <div class="col d-flex justify-content-around">
+            <div class="box">
+              <div class="imgBx">
+                <img src="imgs/Fe.jpg" class="img-fluid text-center" alt="" />
+              </div>
+              <div class="content">
+                <div class="row mt-4">
+                  <p>
+                    <img src="imgs/html.png" alt="" /><br /><span>HTML 5</span>
+                  </p>
+                </div>
+                <div class="row mt-4">
+                  <p>
+                    <img src="imgs/css.png" alt="" /><br /><span>CSS 3</span>
+                  </p>
+                </div>
+                <div class="row mt-4">
+                  <p>
+                    <img src="imgs/js.png" alt="" /><br />
+                    <span>Javascript</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-evenly">
+            <div class="box box-2">
+              <div class="imgBx">
+                <img src="imgs/be.jpg" class="img-fluid text-center" alt="" />
+              </div>
+              <div class="content">
+                <div class="row mt-4">
+                  <p><img src="imgs/c++.png" alt="" /> <span>C++</span></p>
+                </div>
+                <div class="row mt-4">
+                  <p>
+                    <img src="imgs/python.png" alt="" /> <span>Python</span>
+                  </p>
+                </div>
+                <div class="row mt-4">
+                  <p>
+                    <img src="imgs/nodejs.png" alt="" /> <span>Node.Js</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-around">
+            <div class="box box-3">
+              <div class="imgBx">
+                <img src="imgs/fw.jpg" class="img-fluid text-center" alt="" />
+              </div>
+              <div class="content mt-3">
+                <div class="row mt-4">
+                  <p><img src="imgs/dj.png" alt="" /> <span>Django</span></p>
+                </div>
+                <div class="row mt-4">
+                  <p><img src="imgs/ex.png" alt="" height="32" width="32" /> <span>ExpressJs</span></p>
+                </div>
+                <div class="row mt-4">
+                  <p>
+                    <img src="imgs/bootstrap.png" alt="" />
+                    <span>Bootstrap 5</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-around">
+            <div class="box box-4">
+              <div class="imgBx">
+                <img src="imgs/lb.jpg" class="img-fluid text-center" alt="" />
+              </div>
+              <div class="content mt-3">
+                <div class="row mt-3">
+                  <p>
+                    <img src="imgs/react.png" alt="" /> <span>React.js</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-around">
+            <div class="box box-5">
+              <div class="imgBx">
+                <img src="imgs/db.jpg" class="img-fluid text-center" alt="" />
+              </div>
+              <div class="content mt-3">
+                <div class="row mt-3">
+                  <p>
+                    <img src="imgs/sql.png" alt="" /> <br /><span>MSSQL</span>
+                  </p>
+                </div>
+                <div class="row mt-3">
+                  <p>
+                    <img src="imgs/mongodb.png" alt="" /><br />
+                    <span>mongoDB</span>
+                  </p>
+                </div>
+                <div class="row mt-3">
+                  <p>
+                    <img src="imgs/PostgreSQL.32x32.png" alt="" height="32" width="32"/> <br /><span>Postgres</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-around">
+            <div class="box box-6">
+              <div class="imgBx">
+                <img src="imgs/tb.jpg" class="img-fluid text-center" alt="" />
+              </div>
+              <div class="content mt-3">
+                <div class="row mt-4">
+                  <p>
+                    <img src="imgs/git.png" height="32" width="32" alt="" />
+                    <span>Git</span>
+                  </p>
+                </div><div class="row mt-4">
+                  <p>
+                    <img src="imgs/icons8-git.gif" alt="Computer man" height="32" width="32" />
+                    <span>GitHub</span>
+                  </p>
+                </div>
+                <div class="row mt-4">
+                  <p>
+                    <img
+                      src="imgs/tailwindcss.svg"
+                      width="32"
+                      height="32"
+                      alt=""
+                    />
+                    <span>Tailwindcss</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+
+    <section id="portfolio" class="portfolio_wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center mb-4">
+            <span class="subtitle">My project Details</span>
+          </div>
+          <div class="row d-flex justify-content-around">
+            <!-- Project 1 -->
+            <div class="col-lg-12 mb-4">
+              <h3 class="text-center">Project 1: E-Prescription</h3>
+              <p class="text-start">
+                • Developed APIs: Architected and optimized scalable RESTful APIs to support mobile app functionality, ensuring high 
+                performance, security, and seamless integration with third-party services. <br>
+                • Admin Panel Development: Led the full-stack development of an admin panel using React.js, and Nodejs, enabling 
+                efficient management of users, roles, and data, with a focus on performance and scalability.              </p>
+              <p class="text-start"><strong class="text-white">Technologies:</strong> NodeJs, ExpressJs, TypeScript, postgresql, React.js, NextJs, Tailwind css</p>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 mb-4">
+                  <h5 class="text-center text-white">Admin Panel Demo</h5>
+                  <video width="100%" controls autoplay muted loop>
+                    <source src="e-prescription admin.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 mb-4">
+              <h3 class="text-center">Project 2: Hahandorf</h3>
+              <p class="text-start">
+                • Admin Module: Built a tourism platform focused on Hahandorf, Australia, offering detailed information on local 
+                attractions, nearby hotels, discounts, and customizable tour packages. Integrated features for itinerary planning, 
+                package deals, and pick-up/drop-off services to streamline the travel experience for users. <br>
+                • Developed APIs: Designed and implemented scalable RESTful APIs to power Hahandorf’s tourism platform, 
+                delivering high performance, security, and smooth integration with front-end and third-party services. <br>
+                • Payment Integration: Implemented payment gateways like Cards and Razorpay, and integrated webhooks for 
+                real-time transaction updates. Ensured seamless payment processing and accurate transaction handling.
+              <p class="text-start"><strong class="text-white">Technologies:</strong> Node.js, ExpressJs, Next.js, React.js, postgresql, Payment Gateways </p>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 mb-4">
+                  <h5 class="text-center">Admin Panel Demo</h5>
+                  <video width="100%" controls autoplay muted loop>
+                    <source src="dontwait admin.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                  <h5 class="text-center">Web Panel Demo</h5>
+                  <video width="100%" controls autoplay muted loop>
+                    <source src="dont wait web.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 mb-4">
+              <h3 class="text-center">Project 3: Aitek</h3>
+              <p class="text-start">
+                Web Panel: Developed digital solutions for AITEK, Africa's leading IT distributor specializing in hardware and 
+                software sales. Focused on tools that empower resellers, enhance customer engagement, and strengthen AITEK’s 
+                brand presence across African markets through a localized approach. <br>
+                • Developed the software using Node.js for the server-side, React.js for the frontend interface, Postgresql for data 
+                storage, and Express.js as the backend framework. 
+              <p class="text-start"><strong class="text-white">Technologies:</strong> React.js, NextJs, Node.js, Express.js, Postgresql , Payment Gateways</p>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 mb-4">
+                  <h5 class="text-center">Admin Panel Demo</h5>
+                  <video width="100%" controls autoplay muted loop>
+                    <source src="aitekAdmin.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                  <h5 class="text-center">Web Panel Demo</h5>
+                  <video width="100%" controls autoplay muted loop>
+                    <source src="Aitek web.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 mb-4">
+              <h3 class="text-center">Project 4: BluPack</h3>
+              <p class="text-start">
+                • Description: BluPack is an online pharmacy that customizes medication dosages for timely, accurate consumption, 
+                supporting patients, families, and caregivers in managing medication schedules effectively <br>
+                • Web and Partner Web: Built intuitive web interfaces for BluPack’s main platform and partner portal, facilitating easy 
+                ordering, dosage customization, and medication management. Used React.js and Next.js to create user-friendly 
+                interfaces, and Node.js with Express.js to ensure secure, efficient backend processes.
+              <p class="text-start"><strong class="text-white">Technologies:</strong> React.js, NextJs, Node.js, Express.js, Postgresql</p>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 mb-4">
+                  <h5 class="text-center">Admin Panel Demo</h5>
+                  <video width="100%" controls autoplay muted loop>
+                    <source src="blu.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="col-lg-6 col-md-6 mb-4">
+                  <h5 class="text-center">Web Panel Demo</h5>
+                  <video width="100%" controls autoplay muted loop>
+                    <source src="blu.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-12 mb-4">
+              <h3 class="text-center">Project 5: LinkedCare</h3>
+              <p class="text-start">
+                • Description: LinkedCare enhances medical practices by enabling doctors to increase their patient base and extend 
+                their reach with integrated video consultations <br>
+                • Admin & Web Panel: Developed a comprehensive admin and web panel to streamline doctor-patient interactions, 
+                appointment scheduling, and video consultations, making it easier for healthcare providers to manage their 
+                practices. Built the server-side using Node.js and Express.js, with PostgreSQL for database management, and utilized 
+                React.js with Next.js for an intuitive user interface. <br>
+                • APIs: Designed and optimized RESTful APIs to support real-time video consultations, patient management, and 
+                secure payment integrations, ensuring a high-performance and user-friendly experience
+              <p class="text-start"><strong class="text-white">Technologies:</strong> Node.js, ExpressJs, Next.js, React.js, postgresql</p>
+              <div class="row">
+                <div class="col-lg-6 col-md-6 mb-4">
+                  <h5 class="text-center">Admin Panel Demo</h5>
+                  <video width="100%" controls autoplay muted loop>
+                    <source src="linkedcare web.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact" class="contact_wrapper">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div
+            class="col-lg-6 order-2 order-lg-1 pe-lg-5 text-lg-start text-center"
+          >
+            <span class="subtitle">My Contact details</span>
+            <h2>Hire Me.</h2>
+            <div class="row call_detailes mb-4">
+              <label class="col-sm-3 col-lg-4">Call us directly:</label>
+              <div class="col-sm-9 col-lg-8 mb-3 mb-lg-2 text-md-start">
+                <a href="tel:+91 8766547160">+91 8766547160</a>
+              </div>
+
+              <label class="col-sm-3 col-lg-4">Contact Email::</label>
+              <div class="col-sm-9 col-lg-8 mb-3 mb-lg-2 text-md-start">
+                <a href="mailto: hubli0212@gmail.com">hubli0212@gmail.com</a>
+              </div>
+            </div>
+            <form action="https://formspree.io/f/mwkdeqwl" method="post">
+              <div class="mb-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Name"
+                  placeholder="Your Name..."
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <input
+                  type="number"
+                  class="form-control"
+                  name="Phone"
+                  placeholder="Your Phone..."
+                  autocomplete="off"
+                />
+              </div>
+              <div class="mb-4">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="E-mail"
+                  placeholder="Your Email..."
+                  autocomplete="off"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <textarea
+                  cols="40"
+                  rows="4"
+                  class="form-control"
+                  name="message"
+                  placeholder="Write a Message..."
+                  autocomplete="off"
+                ></textarea>
+              </div>
+              <div class="send-btn">
+                <button
+                  type="submit"
+                  style="border: none; background-color: #0e1525"
+                >
+                  <a href="#" style="--clr: #1e9bff"
+                    ><span>Submit</span><i></i
+                  ></a>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6 text-center order-1 mb-4 order-lg-1 mb-lg-0">
+            <img src="imgs/contact.jpg" class="img-fluid" />
+          </div>
+        </div>
+        <br />
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section id="contact" class="footer_wrapper mt-3 mt-md-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 col-md-6 text-center text-md-start">
+            <div class="footer-logo mb-3 mb-md-0"></div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <ul
+              class="list-unstyled d-flex justify-content-center justify-content-md-end justify-content-lg-center social-icon mb-3 mb-md-0"
+            >
+              <li>
+                <a href="https://github.com/himanshu-0212" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://instagram.com/its_hubli_12?igshid=ZDdkNTZiNTM=" target="_blank"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100012995282072" target="_blank"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/himanshu-singh-832321232/" target="_blank"> 
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="script.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</html>
